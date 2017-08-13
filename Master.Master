@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="DevinDow.Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+    <head runat="server">
+        <title>ToDo</title>
+        
+	    <meta name="description" content="ToDo List" />
+	    <meta name="keywords" content="todo, task" />
+
+	    <link rel="shortcut icon" href="Images/check.ico" />
+	    <link rel="stylesheet" href="ToDo.css" type="text/css" />
+
+        <asp:ContentPlaceHolder ID="cphHead" runat="server" />
+    </head>
+
+
+    <body>
+        <form id="frmMain" runat="server">
+            
+			<div style="float:left; margin-right:40px;">
+				<img src="Images/check.png" style="margin:10px 10px 10px 10px" width="47" height="47" alt="ToDo" />
+				
+				<span style="position:relative; top:-21px;">
+					<asp:LoginView ID="LoginView1" runat="server">
+						<LoggedInTemplate>
+							<label class="title"> <asp:LoginName ID="LoginName" runat="server" />&#39;s ToDos </label>
+
+							<asp:LoginStatus ID="LoginStatus" runat="server" style="position:relative; top:-5px;" />
+
+						</LoggedInTemplate>
+						<AnonymousTemplate>
+							<label class="title"> ToDos	</label>
+						</AnonymousTemplate>
+					</asp:LoginView>
+				</span>
+				
+			</div>
+
+			<div style="float:left;">
+				<asp:ContentPlaceHolder ID="cphTop" runat="server" />
+			</div>
+			
+			<div style="clear:both;" />
+				
+			<hr />
+            
+			<div>
+				<asp:ContentPlaceHolder ID="cphMain" runat="server" />
+			</div>
+            
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ToDo">
+  <DataContextMoniker Name="/ToDoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e63cae37-470e-465c-a814-b9e2a6ba16d0" absoluteBounds="7.25, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/ToDoDataContext/Note" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd1c2387-c66d-4e25-9394-267063f8f5c9" absoluteBounds="7.2650000000000006, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67bb7d9e-de87-4b09-b910-b8e5a52226cd" absoluteBounds="3.25, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/ToDoDataContext/TimeFrame" />
+      <nestedChildShapes>
+        <elementListCompartment Id="adbd0fc5-ab31-445d-a7ab-f281de4c6a0e" absoluteBounds="3.265, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3c0533d7-628e-418f-b520-7e0a4be18641" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ToDoDataContext/Task" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1e32c2f-4225-4bfc-92a5-2c9d4163d40f" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="648bb7f2-6728-43e7-aeb2-17252f611fa7" absoluteBounds="5, 2.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ToDoDataContext/Goal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="37bac3aa-d94a-4ffd-b015-e0511c285e84" absoluteBounds="5.0150000000000006, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e59c8c8d-04c1-470d-b7ca-1836889139bf" absoluteBounds="0.5, 2.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ToDoDataContext/Activity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a7f2051-9483-4e82-a1dc-69fe74417517" absoluteBounds="0.51500000000000012, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.25 : 1.09699625651042); (2.5 : 1.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ToDoDataContext/TimeFrame/TimeFrame_Task" />
+      <nodes>
+        <classShapeMoniker Id="67bb7d9e-de87-4b09-b910-b8e5a52226cd" />
+        <classShapeMoniker Id="3c0533d7-628e-418f-b520-7e0a4be18641" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="255f01ca-e001-4204-ad7f-d2786eb260e7" absoluteBounds="2.75, 2.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ToDoDataContext/Priorities" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8732c2d-ac53-446b-b88d-c03e9abf4d09" absoluteBounds="2.765, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="444f4e39-4dc8-4531-b5eb-c4ce3592e34f" absoluteBounds="7.25, 2.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ToDoDataContext/Desires" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e9495fd-082b-4a34-8be1-15f2c648480b" absoluteBounds="7.265, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

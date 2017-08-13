@@ -1,0 +1,10 @@
+body {
+	font-family: Verdana, Helvetica, sans-serif;
+	background-color: #DDDDDD;
+	margin: 8px;
+}
+
+.title {
+	font-size: xx-large;
+	letter-spacing: 0.14em;
+}
